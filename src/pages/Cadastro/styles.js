@@ -5,8 +5,8 @@ export const Container = styled.div`
 `;
 
 export const Main = styled.main`
-  display: grid;
-  grid-template-columns: 40% 60%;
+  display: flex;
+  height: 100%;
 `;
 
 export const Left = styled.div`
@@ -18,9 +18,11 @@ export const Left = styled.div`
 `;
 
 export const Right = styled.div`
-  display: grid;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  width: 100%;
 `;
 export const Slogan = styled.h1`
   padding-bottom: 40px;
@@ -87,7 +89,7 @@ export const LinkSobre = styled.a`
   }
 `;
 
-export const LinkCadastro = styled.button`
+export const ButtonCadastro = styled.button`
   margin-top: 80px;
   width: 326px;
   height: 66px;
@@ -113,35 +115,18 @@ export const LinkCadastro = styled.button`
   }
 `;
 
-export const LinkGoogle = styled.button`
-  width: 445px;
-  height: 45px;
-  margin-top: 20px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 25px;
-  border-style:none;
-  color: #dcdcdc;
-  cursor:pointer;
-  background: #2e64fe;
-  box-sizing: border-box;
-  border-radius: 12px;
+export const BoxButton = styled.button`
   display: flex;
-  align-items: center;
-  text-align: center;
-  padding-left: 47px;
-  &:hover {
-    transition: 0.6ss;
-    background-color: #1c1c1c !important;
-  }
+  justify-content: center;
+  border-style: none;
+  background-color: snow;
 `;
 
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 600px;
-  margin: auto;
+  width: 35em;
+  padding: 0 10px 0 10px;
 `;
 
 export const Input = styled.input`
@@ -176,6 +161,8 @@ export const Fieldset = styled.fieldset`
 export const FieldsetEmail = styled.fieldset`
   width: 100%;
   border: 0;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const Label = styled.label`
@@ -189,8 +176,7 @@ export const Top = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: center;
-  height: 80%;
+  padding-bottom: 4rem;
 `;
 
 export const P = styled.p`

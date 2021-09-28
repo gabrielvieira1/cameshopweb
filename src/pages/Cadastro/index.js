@@ -5,7 +5,8 @@ import { cadastrarProduto } from "../../services/cadastrarProduto";
 import {
   InputDescricao,
   FieldsetEmail,
-  LinkCadastro,
+  ButtonCadastro,
+  BoxButton,
   Titulo,
   Container,
   Slogan,
@@ -77,9 +78,11 @@ export default class Cadastro extends React.Component {
                   onBlur={this.changeHandler}
                 />
               </FieldsetEmail>
-              <LinkCadastro onClick={this.submitHandler}>
+              <BoxButton>
+              <ButtonCadastro onClick={this.submitHandler}>
                 Cadastrar
-              </LinkCadastro>
+              </ButtonCadastro>
+              </BoxButton>
             </Form>
           </Right>
         </Main>
