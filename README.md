@@ -15,7 +15,7 @@ This project was developed with the following technologies:
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/gabrielvieira1/cameshopweb
+$ git clone https://github.com/gabrielvieira1/cameshopweb.git
 
 # Go into the repository folder and install dependencies
 $ cd cameshopweb && yarn install
