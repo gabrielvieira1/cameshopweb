@@ -1,6 +1,4 @@
 import React from "react";
-import axios from "axios";
-import api from '../../services/api';
 import smartphoneImg from "../../assets/Images/smartphoneImg.png";
 import { cadastrarProduto } from "../../services/cadastrarProduto";
 
